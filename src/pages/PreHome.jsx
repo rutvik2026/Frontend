@@ -36,7 +36,7 @@ export const PreHome = () => {
     
       {data.length > 0 ? (
         data.map((item, index) => (
-          <Cards
+          <Cards2
             key={index}
             id={item._id}
             Img={item.RestoPicture}
