@@ -26,7 +26,7 @@ export const PreHome = () => {
   }, []);
 
   return (
-    <Head />
+   <Head onLogout={handleLogout} />
     <div className="d-flex flex-wrap mt-3 justify-content-center">
       <Container className="mt-3">
         <img
