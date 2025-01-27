@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Cards2 from "../component/Cards2";
+import Navbar from "../component/Navbar";
 import axios from "axios";
 
 import { Container } from "react-bootstrap";
@@ -25,6 +26,7 @@ export const PreHome = () => {
   }, []);
 
   return (
+    <Navbar />
     <div className="d-flex flex-wrap mt-3 justify-content-center">
       <Container className="mt-3">
         <img
