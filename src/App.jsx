@@ -6,7 +6,7 @@ import MyApointment from "./pages/MyApointment";
 import Restorant from "./pages/Restorant";
 import Login from "./pages/Login";
 
-import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
+import {HashRouter as Router, Route, Routes, Navigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import RegistrationForm from "./pages/Register";
 import RestoRegistrationForm from "./pages/RestoReg";
@@ -108,7 +108,7 @@ function App() {
   
   return (
     <>
-      <BrowserRouter>
+      <Router>
         {isLoggedIn ? <Head onLogout={handleLogout} /> : null}
 
         <AppointmentProvider>
@@ -209,7 +209,7 @@ function App() {
             />
           </Routes>
         </AppointmentProvider>
-      </BrowserRouter>
+      </Router>
     </>
   );
 }
