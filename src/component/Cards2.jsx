@@ -8,7 +8,7 @@ function Cards2(props) {
   const navigate = useNavigate();
 
   const bookAppoint = () => {
-    navigate("/", { state: { title: props.title, id: props.id } });
+    navigate("/login", { state: { title: props.title, id: props.id } });
   };
 
   return (
