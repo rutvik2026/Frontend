@@ -126,7 +126,7 @@ function App() {
                     <Navigate to="/ownerhome" replace />
                   )
                 ) : (
-                  <PreHome />
+                <Navigate to="/prehome" replace />
                 )
               }
             />
@@ -145,7 +145,7 @@ function App() {
                 )
               }
             />
-
+           <Route path="/prehome" element={<PreHome />} />
             <Route path="/register" element={<RegistrationForm />} />
             <Route path="/restoreg" element={<RestoRegistrationForm />} />
 
