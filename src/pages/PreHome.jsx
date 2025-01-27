@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Cards from "../component/Cards";
+import Cards2 from "../component/Cards2";
 import axios from "axios";
 
 import { Container } from "react-bootstrap";
